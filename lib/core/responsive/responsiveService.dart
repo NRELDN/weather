@@ -31,8 +31,6 @@ class ResponsiveService {
 
   static double r(num v) => v * scale;
 
-  // دالة بديلة يمكن استخدامها بدون init
-
   static double spWithContext(BuildContext context, num v) {
     final media = MediaQuery.of(context);
     final scaleW = media.size.width / _designWidth;
